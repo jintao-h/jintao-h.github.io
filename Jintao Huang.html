@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://cseweb.ucsd.edu/~dstefan/ -->
+<!--  -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-security-policy" content="upgrade-insecure-requests">
+
+
+  <title> Jintao Huang </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./jintao_huang_files/css" rel="stylesheet" type="text/css">
+  <link href="./jintao_huang_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./jintao_huang_files/jumbotron-narrow.css" rel="stylesheet">
+  <link href="./jintao_huang_files/main.css" rel="stylesheet">
+
+
+
+  <script src="./jintao_huang_files/jquery-1.11.0.min.js"></script>
+  <script src="./jintao_huang_files/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // add a hash to the URL when the user clicks on a tab
+      $('a[data-toggle="tab"]').on('click', function(e) {
+	history.pushState(null, null, $(this).attr('href'));
+      });
+      // navigate to a tab when the history changes
+      window.addEventListener("popstate", function(e) {
+	var activeTab = $('[href=' + location.hash + ']');
+	if (activeTab.length) {
+	  activeTab.tab('show');
+	} else {
+	  $('a[href=#about]').tab('show');
+	}
+      });
+      $('a[href=#about]').tab('show');
+    })
+  </script>
+  </head>
+
+  <body>
+
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right" id="tabs">
+      <li class="active"><a href="/#about" data-toggle="tab">about</a></li>
+      <li><a href="/#pubs" data-toggle="tab">publications</a></li>
+    </ul>
+    <h3><strong>Jintao Huang</strong></h3>
+  </div>
+<div class="tab-content">
+
+
+<div class="col-lg-12">
+    <div class="media">
+      <div class="media-left pull-left effect">
+        <img src="./jintao_huang_files/jintao.jpeg" class="image img-rounded" width="140px">
+
+      </div>
+      <div class="media-body" style="margin-left: 170px;">
+        Undergraduate Student
+        <br>
+	<a href="http://cse.hust.edu.cn">Cyber Science and Engineering</a> <br>
+        <a href="https://english.hust.edu.cn">Huazhong University of Science and Technology</a>
+        <br>
+        Location: Security PRIDE, Mingde C502
+        <br>
+        Email: jintaohuang@hust.edu.cn
+        <br>
+        Interests: security, eCrime, underground economics.
+      </div>
+    </div>
+</div>
+
+<div class="tab-pane active" id="about">
+<div class="col-lg-12">
+  <h3>About Me</h3>
+      <p>
+        I am a fourth-year undergraduate student in the <a href="http://www.cse.ucsd.edu/">HUST CSE Department</a>.
+
+      </p>
+
+      <p>
+        I mainly worked in Security PRIDE research group during my undergraduate study
+        under <a href="https://howiepku.github.io">Haoyu Wang</a> at <a href="https://english.hust.edu.cn">HUST</a> .
+        Also, I have the fortune to work with 
+        <a href="http://www.eecs.qmul.ac.uk/~tysong/">Gareth Tyson</a> at <a href="https://hkust.edu.hk/">HKUST</a> 
+        and 
+        <a href="https://ece.ubc.ca/konstantin-beznosov/">Konstantin Beznosov</a> at <a href="https://www.ubc.ca/">UBC</a>.
+      </p>
+</div>
+</div>
+
+<div class="tab-pane" id="pubs">
+<div class="col-lg-12">
+  <h3>Publications</h3>
+
+  <!-- <p> xxx
+  </p> -->
+
+
+<div>
+<h4>Papers</h4>
+<ul>
+
+
+
+ <li>
+   <span class="paper-authors">Jintao Huang, Ningyu He, Kai Ma, Jiang Xiao, Haoyu Wang.</span>
+   <span class="paper-title">Miracle or Mirage? A Measurement Study of NFT Rug Pulls.</span>
+   <span class="paper-conf">ACM SIGMETRICS / IFIP PERFORMANCE</span>
+   (SIGMETRICS 2024).
+   <!-- <div>
+   [ <a href="xxx">paper</a> |
+     <a href="xxx">bibtex</a> ]
+   </div> -->
+ </li>
+
+
+
+
+
+</div>
+
+
+
+
+</div> <!-- tab-content -->
+</div> <!-- container -->
+
+
+
+
+</body></html>
