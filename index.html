@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)https://cseweb.ucsd.edu/~dstefan/ -->
 <!--  -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="content-security-policy" content="upgrade-insecure-requests">
@@ -16,156 +19,239 @@
   <link href="./jintao_huang_files/jumbotron-narrow.css" rel="stylesheet">
   <link href="./jintao_huang_files/main.css" rel="stylesheet">
 
-
+  <style>
+    .red-border {
+        display: inline-block;
+        border: 2px solid pink;
+        padding: 0px 8px;
+        border-radius: 4px;
+        background-color: pink;
+    }
+</style>
 
   <script src="./jintao_huang_files/jquery-1.11.0.min.js"></script>
   <script src="./jintao_huang_files/bootstrap.min.js"></script>
   <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
       // add a hash to the URL when the user clicks on a tab
-      $('a[data-toggle="tab"]').on('click', function(e) {
-	history.pushState(null, null, $(this).attr('href'));
+      $('a[data-toggle="tab"]').on('click', function (e) {
+        history.pushState(null, null, $(this).attr('href'));
       });
       // navigate to a tab when the history changes
-      window.addEventListener("popstate", function(e) {
-	var activeTab = $('[href=' + location.hash + ']');
-	if (activeTab.length) {
-	  activeTab.tab('show');
-	} else {
-	  $('a[href=#about]').tab('show');
-	}
+      window.addEventListener("popstate", function (e) {
+        var activeTab = $('[href=' + location.hash + ']');
+        if (activeTab.length) {
+          activeTab.tab('show');
+        } else {
+          $('a[href=#about]').tab('show');
+        }
       });
       $('a[href=#about]').tab('show');
     })
   </script>
-  </head>
+</head>
 
-  <body>
+<body>
 
-<div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right" id="tabs">
-      <li class="active"><a href="/#about" data-toggle="tab">about</a></li>
-      <li><a href="/#pubs" data-toggle="tab">publications</a></li>
-    </ul>
-    <h3><strong>Jintao Huang</strong></h3>
-  </div>
-<div class="tab-content">
-
-
-<div class="col-lg-12">
-    <div class="media">
-      <div class="media-left pull-left effect">
-        <img src="./jintao_huang_files/jintao.jpeg" class="image img-rounded" width="140px">
-
-      </div>
-      <div class="media-body" style="margin-left: 170px;">
-        Undergraduate Student
-        <br>
-	<a href="http://cse.hust.edu.cn">Cyber Science and Engineering</a> <br>
-        <a href="https://english.hust.edu.cn">Huazhong University of Science and Technology</a>
-        <br>
-        Location: Security PRIDE, Mingde C502
-        <br>
-        Email: jintaohuang@hust.edu.cn
-        <br>
-        Interests: security, eCrime, underground economics.
-      </div>
+  <div class="container">
+    <div class="header">
+      <ul class="nav nav-pills pull-right" id="tabs">
+        <li class="active"><a href="/#about" data-toggle="tab">about</a></li>
+        <li><a href="/#pubs" data-toggle="tab">publications</a></li>
+        <li><a href="/#serv" data-toggle="tab">service</a></li>
+      </ul>
+      <h3><strong>Jintao Huang</strong></h3>
     </div>
-</div>
-
-<div class="tab-pane active" id="about">
-<div class="col-lg-12">
-  <h3>About Me</h3>
-      <p>
-        I am a fourth-year undergraduate student in the <a href="https://english.hust.edu.cn">HUST CSE Department</a>. 
-        My research interest is in data-based measurement and program analysis for security. 
-        Currently, I focus on blockchain. 
-      </p>
-
-      <p>
-        I mainly work in Security PRIDE research group during my undergraduate study
-        under Prof. <a href="https://howiepku.github.io">Haoyu Wang</a> at <a href="https://english.hust.edu.cn">HUST</a>.
-        Also, I have the fortune to work with 
-        Prof. <a href="http://www.eecs.qmul.ac.uk/~tysong/">Gareth Tyson</a> at <a href="https://hkust.edu.hk/">HKUST</a> 
-        and 
-        Prof. <a href="https://ece.ubc.ca/konstantin-beznosov/">Konstantin Beznosov</a> at <a href="https://www.ubc.ca/">UBC</a>.
-      </p>
-
-      <p>
-        I'm always open to collaborations. 
-        If you have any interesting ideas, please feel free to get in touch with me!
-      </p>
-  
-</div>
-<div class="col-lg-12">
-<div class="news-item">
-  <h3>News</h3>
-  <p>
-    <span class="paper-title">2024-01</span>  Our paper titled "Unveiling the Paradox of NFT Prosperity" has been accepted by WWW 2024!
-    </p>
-  <p>
-    <span class="paper-title">2023-09</span>  Our paper titled "Miracle or Mirage? A Measurement Study of NFT Rug Pulls." has been accepted by Sigmetrics 2024!
-     </p>
-</div>
-</div>
-
-</div>
+    
+    <div class="tab-content">
 
 
+      <div class="col-lg-12">
+        <div class="media">
+          <div class="media-left pull-left effect">
+            <img src="./jintao_huang_files/jintao.jpeg" class="image img-rounded" width="140px">
 
-<div class="tab-pane" id="pubs">
-<div class="col-lg-12">
-  <h3>Publications</h3>
+          </div>
+          <div class="media-body" style="margin-left: 170px;">
+            PhD Candidate
+            <br>
+            <a href="https://cse.osu.edu"> Department of Computer Science and Engineering</a> <br>
+            <a href="https://www.osu.edu">The Ohio State University</a>
+            <br>
+            Location: TBD
+            <br>
+            Email: jintao123huang@gmail.com, huang.5692@buckeyemail.osu.edu, jintaohuang@hust.edu.cn
+            <br>
+            Interests: blockchain security
+          </div>
+        </div>
+      </div>
 
-  <p> Totally 2 regular papers, 2 of them are as first author, 2 of them are published on CSRankings conferences.
-  </p>
+      <div class="tab-pane active" id="about">
+        <div class="col-lg-12">
+          <h3>About Me</h3>
+          <p>
+            Hi there! I am an upcoming PhD candidate of Department of Computer Science and Engineering at Ohio State
+            University.
+            I am honored to be advised by Dr. <a
+              href="https://scholar.google.com/citations?user=6Kuq1acAAAAJ&hl=en">Zhiqiang Lin</a> (Distinguished
+            Professor, IEEE Fellow, a worldwide top-10 researcher on the <a
+              href="https://nebelwelt.net/pubstats/top-authors-sys_sec.html">"system:security"</a> list).
+            My research interest is in blockchain security. Specifically, I am interested at the intersection of three
+            domains:
 
 
-<div>
-<h4>Papers</h4>
-<ul>
+          <ul>
+            <li>program analysis (especially binary analysis) for blockchain security</li>
+            <li>modeling/measurement for blockchain security</li>
+            <li>ML/LLM for blockchain security</li>
+          </ul>
 
-  <p>
-  <li>
-    <span class="paper-title">Unveiling the Paradox of NFT Prosperity.</span><br>
-    <span class="paper-authors"><b>Jintao Huang</b>, Pengcheng Xia, Jiefeng Li, Kai Ma, Gareth Tyson, Xiapu Luo, Lei Wu, Yajin Zhou, Wei Cai, Haoyu Wang.</span><br>
-    <span class="paper-conf">ACM Web Conference</span>
-    (WWW 2024). Acceptance Rate: <span class="paper-title">20%</span>.
-    <!-- <div>
+          </p>
+
+          <p>
+            I'm always open to collaborations.
+            If you want to share any thoughts, or our interests naturally overlap, please feel free to get in touch with
+            me!
+          </p>
+
+          <p>
+            During my undergraduate study, I mainly work in Security PRIDE research group under Prof. <a
+              href="https://howiepku.github.io">Haoyu Wang</a> at <a href="https://english.hust.edu.cn">HUST</a>.
+            Also, I have the fortune to work with
+            Prof. <a href="http://www.eecs.qmul.ac.uk/~tysong/">Gareth Tyson</a> at <a
+              href="https://hkust.edu.hk/">HKUST</a>
+            and
+            Prof. <a href="https://ece.ubc.ca/konstantin-beznosov/">Konstantin Beznosov</a> at <a
+              href="https://www.ubc.ca/">UBC</a>.
+          </p>
+
+        
+        </div>
+        <div class="col-lg-12">
+          <div class="news-item">
+            <h3>News</h3>
+            <p>
+              <span class="paper-title">2024-01</span> Excited to announce that our paper titled "Unveiling the Paradox
+              of NFT Prosperity" has been accepted by WWW 2024!
+            </p>
+            <p>
+              <span class="paper-title">2023-09</span> Excited to announce that our paper titled "Miracle or Mirage? A
+              Measurement Study of NFT Rug Pulls." has been accepted by Sigmetrics 2024!
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="tab-pane" id="pubs">
+        <div class="col-lg-12">
+          <h3>Publications</h3>
+
+          <p> The <a href="http://portal.core.edu.au/conf-ranks/">CORE ranking</a> is one assessment metric for academic conference quality. 
+            Of the 792 assessed venues, A* occupies the top 7.45%, whereas A encompasses the top 16.41%.
+            conferences. 
+            <!-- <a href="#footnote1">[1]</a></sup></p> -->
+
+
+          </footer>
+          </p>
+
+          <div>
+            <h4>Papers</h4>
+            <ul>
+
+              <p>
+                <li>
+                  <span class="paper-title">Unveiling the Paradox of NFT Prosperity.</span><br>
+                  <span class="paper-authors"><b>Jintao Huang</b>, Pengcheng Xia, Jiefeng Li, Kai Ma, Gareth Tyson,
+                    Xiapu Luo, Lei Wu, Yajin Zhou, Wei Cai, Haoyu Wang.</span><br>
+                  <span class="red-border">A*</span>  <span class="paper-conf">ACM The Web Conference</span>
+                  (WWW 2024). Acceptance Rate: <span class="paper-title">20%</span>.
+                  <!-- <div>
     [ <a href="xxx">paper</a> |
       <a href="xxx">bibtex</a> ]
     </div> -->
-  </li>
-  </p>
+                </li>
+              </p>
 
 
-  <p>
- <li>
-  <span class="paper-title">Miracle or Mirage? A Measurement Study of NFT Rug Pulls.</span><br>
-   <span class="paper-authors"><b>Jintao Huang</b>, Ningyu He, Kai Ma, Jiang Xiao, Haoyu Wang.</span><br>
-   <span class="paper-conf">ACM SIGMETRICS / IFIP PERFORMANCE</span>
-   (SIGMETRICS 2024). Acceptance Rate: <span class="paper-title">12.5%</span>.
-   <!-- <div>
+              <p>
+                <li>
+                  <span class="paper-title">Miracle or Mirage? A Measurement Study of NFT Rug Pulls.</span><br>
+                  <span class="paper-authors"><b>Jintao Huang</b>, Ningyu He, Kai Ma, Jiang Xiao, Haoyu Wang.</span><br>
+                  <span class="red-border">A*</span> <span class="paper-conf">ACM SIGMETRICS / IFIP PERFORMANCE</span>
+                  (SIGMETRICS 2024). Acceptance Rate: <span class="paper-title">12.5%</span>.
+                  <!-- <div>
    [ <a href="xxx">paper</a> |
      <a href="xxx">bibtex</a> ]
    </div> -->
- </li>
-</p>
+                </li>
+              </p>
 
 
 
 
 
-</div>
+          </div>
 
 
 
 
-</div> <!-- tab-content -->
-</div> <!-- container -->
+        </div> <!-- tab-content -->
+      </div> <!-- container -->
+
+      <hr>
+
+      <!-- <ol>
+          <li id="footnote1"> Copied from Homepage of Dr. Liyi Zhou</li>
+      </ol> -->
+  
 
 
 
+</body>
 
-</body></html>
+</html>
+
+
+
+<div class="tab-pane" id="serv">
+  <div class="col-lg-12">
+    <h3>Service</h3>
+
+    The <a href="http://portal.core.edu.au/conf-ranks/">CORE ranking</a> is one assessment metric for academic conference quality. 
+            Of the 792 assessed venues, A* occupies the top 7.45%, whereas A encompasses the top 16.41%.
+            conferences. 
+    <div>
+      <h4>Reviewer</h4>
+      <ul>
+
+        <p>
+          <li>
+            <span class="paper-title">IEEE Transactions on Dependable and Secure Computing (TDSC), </span> 2024<br>
+          </li>
+        </p>
+      </div> 
+
+
+        <div>
+          <h4>Sub Reviewer</h4>
+          <ul>
+
+            <p>
+              <li>
+                <span class="red-border">A*</span> <span class="paper-title">USENIX Security, </span> 2024<br>
+                <!-- <div>
+      [ <a href="xxx">paper</a> |
+        <a href="xxx">bibtex</a> ]
+      </div> -->
+              </li>
+            </p>
+
+        </div>
+
+
+<!-- tab-content -->
